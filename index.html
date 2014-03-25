@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3D</title>
+<link rel="icon" href="images/Benny-the-ball-_animated.gif">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/image.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){ 
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			}); 
+			
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+ 
+		});
+
+
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+
+
+
+function validateForm()
+{
+var p=document.forms["myForm"]["email"].value;
+var q=document.forms["myForm"]["first_name"].value;
+var r=document.forms["myForm"]["last_name"].value;
+var s=document.forms["myForm"]["comments"].value;
+if (q==null || q=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+if (r==null || r=="") 
+   {
+	   alert("Last name must be filled out");
+	   return false;
+   }
+if (s==null || s=="")
+   {
+	   alert("Please filled out comment box");
+	   return false;
+   }
+var atpos=p.indexOf("@");
+var dotpos=p.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }   
+}
+</script>
+</head oncontextmenu="return false">
+<body>
+<div class="container">
+  <header class="clearfix">
+    <div style="width:10px;height:10px;margin-top:-15px;margin-left:-80px"><img src="images/logo.png" width="250" height="250"></div>
+    <nav> <a href="http://facebook.com/" data-info="facebook"><img src="images/facebook-like-m.png"><span>Facebook</span></a> <a href="http://twitter.com/" data-info="Twitter"><img src="images/twitter-m.png"><span>Twitter</span></a> <a href="http://pluse.google.com/" data-info="g+"><img src="images/google-plus-m.png"><span>g+</span></a> <a href="mailto:napender@gmail.com" data-info="Mail"><img src="images/email-m.png"><span>Mail</span></a> </nav>
+  </header>
+  <div> <a href="#about"  class="smoothScroll" style="font-family:Verdana; font-size:30px; margin-left:400px">About us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#webDesign" class="smoothScroll" style="font-family:Verdana; font-size:30px">Web Design</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#seo" class="smoothScroll" style="font-family:Verdana; font-size:30px">SEO</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#offer" class="smoothScroll" style="font-family:Verdana; font-size:30px">Offer</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#contact" class="smoothScroll" style="font-family:Verdana; font-size:30px">Contact us</a> </div>
+  <div id="cbp-so-scroller" class="cbp-so-scroller">
+    <section class="cbp-so-section">
+      <article class="cbp-so-side cbp-so-side-left"> <br>
+        <p style="font-family:'Arial Black', Gadget, sans-serif;font-size:36px;" id="about">About us</p>
+        <p class="paragraph"><b>W3Developer.in</b> is a privately held company, consisting of creative and multi-talented web designers and web developers. We provide a wide range of services including web design, web development and seo.</p>
+        <p class="paragraph"> W3Developer is the fastest growing startup in Delhi/NCR and Bangalore, which is providing very good service at very low cost.if you want your own website then you are at best place.</p>
+        <p class="paragraph">So what you are looking for just ping us and we will revert you back within 6 hrs.</p>
+        </p>
+      </article>
+      <figure class="cbp-so-side cbp-so-side-right"> <img src="images/1.png" alt="img01"> </figure>
+    </section>
+    <section class="cbp-so-section">
+      <figure class="cbp-so-side cbp-so-side-left"> <img src="images/2.png" alt="img01"> </figure>
+      <article class="cbp-so-side cbp-so-side-right">
+        <p style="font-family:'Arial Black', Gadget, sans-serif;font-size:36px;" id="webDesign">Web Design</p>
+        <p class="paragraph" >Wanna grow your business or your organisation ? start it with your own website and cultivate your work.</p>
+        <p class="paragraph" > we know your need so just sit on your rocking chair and we will design and develop your website as you want. This is not the end of our responsibility, we will maintain your website without any cost.
+          because you are valuable for us.</p>
+      </article>
+    </section>
+    <section class="cbp-so-section">
+      <article class="cbp-so-side cbp-so-side-left">
+        <p style="font-family:'Arial Black', Gadget, sans-serif;font-size:36px;" id="seo">Search Engine Optimization</p>
+        <p class="paragraph">Search Engines Optimization is that by which you can show your products to the world. A powerful method using in web media.</p>
+        <p class="paragraph"> We can help you to make your websites listed in main search engines. Our specialized seo team providing their efficiency by successful completion of many projects.</p>
+      </article>
+      <figure class="cbp-so-side cbp-so-side-right"> <img src="images/3.png" alt="img01"> </figure>
+    </section>
+    <section class="cbp-so-section">
+      <figure class="cbp-so-side cbp-so-side-left"> <img src="images/5.png" alt="img01"> </figure>
+      <article class="cbp-so-side cbp-so-side-right">
+        <p style="font-family:'Arial Black', Gadget, sans-serif;font-size:36px;" id="offer">Offers</p>
+        <p class="paragraph">We always think about you and work best to provide good service and good offer price.
+          Here we are offering you<b> 50% off </b> on all our service. So what are you waiting for go forward and grab this offer.</p>
+        <br>
+        <p class="paragraph">We are also offering you money making offer,<b> just refer your friend and win up to 2000/-<sup><b>*</b></sup> rupee cash.</b> So start <a href="#contact" class="smoothScroll" ><b><i> referring </i> </b> </a> your friends and make money.</p>
+      </article>
+    </section>
+    <section class="cbp-so-section">
+      <article class="cbp-so-side cbp-so-side-left">
+        <h2 id="contact">Contact us</h2>
+        <form class="cbp-mc-form" name="contactform" action="send_form_email.php" onsubmit="validateForm()" method="post">
+          <div class="cbp-mc-column"> </div>
+          <div class="cbp-mc-column"> </div>
+          <div class="cbp-mc-column">
+            <label for="first_name" class="contact_font">First Name<sup>*</sup></label>
+            <br>
+            <input type="text" class="contact_font" style="border-style:solid" id="first_name" name="first_name" >
+            <br>
+            <label for="last_name" class="contact_font">Last Name<sup>*</sup></label>
+            <br>
+            <input type="text" class="contact_font" style="border-style:solid" id="last_name" name="last_name">
+            <br>
+            <label for="email" class="contact_font">Email Address<sup>*</sup></label>
+            <br>
+            <input type="text" class="contact_font" style="border-style:solid" id="email" name="email">
+            <br>
+            <label for="phone" class="contact_font">Phone Number</label>
+            <br>
+            <input type="text" class="contact_font" style="border-style:solid" id="phone" name="phone">
+            <br>
+            <label for="comments" class="contact_font">Comments<sup>*</sup></label>
+            <br>
+            <textarea id="comments" class="contact_font" rows="5" cols="25" style="border:2px solid;border-color:#FFF;"  name="comments"></textarea>
+          </div>
+          <div>
+            <input class="contact_input"  type="submit" value="SEND" />
+          </div>
+        </form>
+      </article>
+      <figure class="cbp-so-side cbp-so-side-right"> <img src="images/6.png" alt="img01"> </figure>
+    </section>
+    <a href="#" class="scrollup">Scroll</a> </div>
+</div>
+<script src="js/classie.js"></script> 
+<script src="js/cbpScroller.js"></script> 
+<script>
+			new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+		</script>
+</body>
+</html>
